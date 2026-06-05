@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" content="#003366">
+
+  <!-- Favicon estándar -->
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <!-- Favicon en SVG (opcional) -->
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
+  <!-- Para Apple (iOS) -->
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <!-- Para Android/Chrome -->
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Color de tema en navegadores móviles -->
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Panel Principal</title>
+  <link rel="stylesheet" href="css/dashboard/dashboard.css" />
+  <link rel="stylesheet" href="css/dashboard/dashboardModal.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <h1 class="cabecera" id="cabecera">UserName</h1>
+    <!-- <div class="logo">Mi Dashboard</div> -->
+    <div class="user-menu">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Usuario" class="user-icon" />
+      <div class="dropdown">
+        <button class="dropdown-btn">▼</button>
+        <div class="dropdown-content">
+          <!-- <a href="#">Perfil</a>
+            <a href="#">Configuración</a> -->
+          <a href="#" id="optionCerrarSession">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+    <!-- <h1>Bienvenido a ToolTips 😀</h1> -->
+    <div class="menu-grid">
+      <!-- <a href="consulta.html" class="menu-item">
+        <div class="menu-icon">📅</div>
+        <div class="menu-title">Consulta Provias</div>
+      </a>
+      <a href="consultaDNI.html" class="menu-item">
+        <div class="menu-icon">🙎🙎‍♂️</div>
+        <div class="menu-title">Consulta DNI</div> 
+      </a> -->
+      <a href="generadorDocumentos.html" class="menu-item">
+        <div class="menu-icon">📃📑📜</div>
+        <div class="menu-title">Generador Infor/Resol</div>
+      </a>
+      <a href="generadorDiligencia.html" class="menu-item">
+        <div class="menu-icon">✏️📜</div>
+        <div class="menu-title">Generador Diligencia</div>
+      </a>
+      <a href="generadorPDFfotos.html" class="menu-item">
+        <div class="menu-icon">📷🖼️📄</div>
+        <div class="menu-title">PDF fotos</div>
+      </a>
+      <a href="qrDetectorMejorad.html" class="menu-item">
+        <div class="menu-icon">🔍⛶🤳</div>
+        <div class="menu-title">Scanner DAM</div>
+      </a>
+      <a href="modificadorNotaCredito.html" class="menu-item">
+        <div class="menu-icon">📑✏️💵</div>
+        <div class="menu-title">Modificador NCN</div>
+      </a>
+      <!-- <a href="#" class="menu-item">
+        <div class="menu-icon">⚙️</div>
+        <div class="menu-title">Configuración</div>
+      </a> -->
+    </div>
+  </div>
+
+  <!-- Modal de bienvenida -->
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="logo-container">
+        <img src="recursos/imagenes/logoDTARCv2.png" alt="Logo de la empresa" class="company-logo">
+      </div>
+      <h2 class="welcome-title">¡Bienvenido a la PODEROSISIMA DTARC!</h2>
+      <h2 id="nombreBienvenida" class="welcome-name">Nombre</h2>
+      <button id="acceptBtn" class="accept-button">Aceptar</button>
+    </div>
+  </div>
+  <script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>
